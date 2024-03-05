@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./signup.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <form id="create-visitor-form">
+      <div>
+        <label class="form-label fw-bold" for="visitor-name">Name</label>
+        <input type="text" id="visitor-name" name="visitorName" />
+      </div>
+      <div>
+        <label class="form-label fw-bold" for="email">Email</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div>
+        <label class="form-label fw-bold" for="Coins">Coins</label>
+        <input type="text" id="Coins" name="Coins" value="50" />
+      </div>
+      <input
+        id="submit"
+        class="btn btn-outline-dark"
+        type="submit"
+        value="הירשם"
+      />
+    </form>
+
+    <!-- צרו טופס יצירת אורח חדש -->
+    <!-- לאחר יצירה, הוסיפו אותו למערך האורחים ושמרו את מערך האורחים המעודכן בלוקל סטורג' -->
+    <!-- עברו לעמוד התחברות כדי לבחור את האורח שאיתו תכנסו לגן החיות -->
+    <!-- ממשו את הלוגיקה של היצירה, בפונקציה שהוגדרה מראש בקובץ signup.js -->
+    <script src="./signup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+* {
+  font-family: cursive;
+}
+
+body {
+  background-image: url("./images/jungle3_background.jpeg");
+}
+
+#visited-animals {
+  background-color: rgba(230, 229, 192, 0.959);
+  width: 210px;
+  height: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  margin-top: 0;
+  /* justify-content: space-between;
+  text-align: center; */
+}
+
+#feeded-animals {
+  background-color: rgba(230, 229, 192, 0.959);
+  text-align: center;
+  width: 210px;
+  height: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+#favorite-animal {
+  background-color: rgba(230, 229, 192, 0.959);
+  width: 210px;
+  height: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
+#dashInfo {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 10%; */
+}
+
+.bar {
+  background-color: rgba(245, 245, 220, 0.518);
+  display: block;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 10px;
+  padding: 10px;
+}
+
+.bar ul {
+  margin-top: 15px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-family: system-ui;
+  margin-right: auto;
+}
+
+#cards {
+  display: flex;
+  margin-left: 40%;
+  /* flex-wrap: nowrap; */
+  /* width: 50px;
+  height: 50px; */
+}
+
+div > h1 {
+  color: rgb(86, 57, 15);
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 50px;
+}
+
+#cards div {
+  display: flex;
+  align-items: center;
+}
+
+#titles {
+  display: flex;
+  justify-content: center;
+  gap: 110px;
+}

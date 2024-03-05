@@ -1,0 +1,66 @@
+* {
+  font-family: cursive;
+}
+body {
+  background-image: url("./images/jungle3_background.jpeg");
+}
+
+h1 {
+  color: rgb(75, 43, 2);
+  text-align: center;
+}
+
+#visitor_search {
+  margin-top: 30px;
+  margin-left: 43%;
+  width: 200px;
+  border: 3px solid white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.cards div {
+  width: 100%;
+  justify-content: center;
+}
+
+.cards {
+  background-color: rgba(72, 165, 106, 0.587);
+  width: 210px;
+  height: 290px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  transition: box-shadow 0.3s ease; /* Smooth transition for the box-shadow */
+  transform-style: preserve-3d;
+  transition: transform 1500ms;
+}
+
+.cards:hover {
+  box-shadow: 5px 5px 5px 5px rgba(237, 228, 130, 0.438);
+  transform: rotateY(180deg);
+}
+
+#picture {
+  border-radius: 70px;
+  height: 180px;
+  width: 180px;
+}
+
+#cards:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* New box-shadow on hover */
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#visitor-list {
+  display: flex;
+  justify-content: space-around;
+}

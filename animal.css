@@ -1,0 +1,192 @@
+* {
+  font-family: cursive;
+}
+body {
+  background-image: url("./images/jungle3_background.jpeg");
+}
+
+.picture {
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  background: none;
+}
+
+#related-animals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#img {
+  width: 80px;
+  height: 80px;
+}
+
+#button {
+  margin-top: 100px;
+  width: 250px;
+}
+
+#feed-animal {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#feed-animal:hover {
+  background-color: #fff;
+}
+
+#feed-animal:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  #feed-anima {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+/*   Open state of the dialog  */
+dialog[open] {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+/*   Closed state of the dialog   */
+dialog {
+  opacity: 0;
+  transform: scaleY(0);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out,
+    overlay 0.7s ease-out allow-discrete, display 0.7s ease-out allow-discrete;
+  /* Equivalent to
+  transition: all 0.7s allow-discrete; */
+}
+
+/*   Before-open state  */
+/* Needs to be after the previous dialog[open] rule to take effect,
+    as the specificity is the same */
+@starting-style {
+  dialog[open] {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+}
+
+/* Transition the :backdrop when the dialog modal is promoted to the top layer */
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0%);
+  transition: display 0.7s allow-discrete, overlay 0.7s allow-discrete,
+    background-color 0.7s;
+  /* Equivalent to
+  transition: all 0.7s allow-discrete; */
+}
+
+dialog[open]::backdrop {
+  background-color: rgb(0 0 0 / 25%);
+}
+
+/* This starting-style rule cannot be nested inside the above selector
+because the nesting selector cannot represent pseudo-elements. */
+
+@starting-style {
+  dialog[open]::backdrop {
+    background-color: rgb(0 0 0 / 0%);
+  }
+}
+
+#animalInfo {
+  width: 210px;
+  height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.3s ease; /* Smooth transition for the box-shadow */
+  transform-style: preserve-3d;
+  transition: transform 1500ms;
+  text-align: center;
+}
+
+#name {
+  color: rgb(121, 76, 25);
+  margin-bottom: 40px;
+  font-size: 50px;
+}
+
+#animal {
+  margin: 30px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(228, 232, 219, 0.416);
+}
+
+#img {
+  margin-top: 30px;
+  border-radius: 30px;
+  height: 220px;
+  width: 220px;
+}
+
+#cards {
+  background-color: white;
+  width: 210px;
+  height: 240px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  transition: box-shadow 0.3s ease; /* Smooth transition for the box-shadow */
+  transform-style: preserve-3d;
+  transition: transform 1500ms;
+}
+
+.bar {
+  background-color: rgba(245, 245, 220, 0.872);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 10px;
+  /* padding: 10px; */
+}
+
+.bar ul {
+  margin-top: 15px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-family: system-ui;
+  margin-right: auto;
+}
+
+#related-animals {
+  width: 1000px;
+  margin-left: 180px;
+  margin-right: 180px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(228, 232, 219, 0.568);
+}

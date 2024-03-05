@@ -1,0 +1,35 @@
+body {
+  background-image: url(./images/signup-back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: unset;
+}
+
+input {
+  width: 150px;
+  border: 3px solid white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+label {
+  font-family: cursive;
+}
+
+#Coins {
+  text-align: center;
+  width: 40px;
+}
+
+#create-visitor-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 320px;
+}
+
+#submit {
+  margin-top: 20px;
+  margin-left: 45px;
+  text-align: center;
+}

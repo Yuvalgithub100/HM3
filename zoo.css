@@ -1,0 +1,146 @@
+* {
+  font-family: cursive;
+  font-weight: bold;
+}
+
+body {
+  background-image: url("./images/jungle3_background.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+}
+
+#SearchAnimal {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 40%;
+  width: 200px;
+  border: 3px solid white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#cards {
+  background-color: white;
+  width: 210px;
+  height: 240px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  transition: box-shadow 0.3s ease; /* Smooth transition for the box-shadow */
+  transform-style: preserve-3d;
+  transition: transform 1500ms;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+section {
+  display: flex;
+  background: none;
+}
+section div {
+  justify-content: center;
+  background-color: rgb(209, 213, 213);
+  /* border: 2px solid white; */
+  align-items: center;
+  border-radius: 10px;
+  width: 250px;
+  height: 50px;
+  margin-right: 15px;
+}
+#colorFilter {
+  width: 150px;
+}
+#weightFilter {
+  width: 100px;
+  height: 30px;
+}
+
+#heightFilter {
+  width: 100px;
+  height: 30px;
+}
+
+#filterAnimal {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: cursive;
+}
+
+#css div {
+  width: 100%;
+  justify-content: center;
+}
+#animal-cards {
+  background-color: rgba(245, 245, 220, 0.518);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin-left: 80px;
+}
+
+.picture {
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  background: none;
+}
+
+h1 {
+  color: rgb(75, 43, 2);
+  text-align: center;
+}
+
+.form-control_my-4 {
+  margin-top: 30px;
+  margin-left: 43%;
+  width: 200px;
+  border: 3px solid white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#isPredator {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+.bar {
+  background-color: rgba(245, 245, 220, 0.518);
+  display: block;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 10px;
+  padding: 10px;
+}
+
+.bar ul {
+  margin-top: 15px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-family: system-ui;
+  margin-right: auto;
+}
+
+#reset {
+  justify-content: right;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoo</title>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./zoo.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section id="filterAnimal">
+      <div id="checkbox" class="form-check">
+        <input type="checkbox" id="isPredator" name="isPredator" />
+        <label for="isPredator">isPredator</label><br /><br />
+      </div>
+      <div>
+        <div>
+          <label for="habitat">Habitat</label>
+          <input
+            class="form-check-input"
+            type="radio"
+            id="land"
+            name="habitat"
+            value="land"
+          />
+          <label class="form-check-label" for="land">Land</label><br />
+          <input
+            class="form-check-input"
+            type="radio"
+            id="sea"
+            name="habitat"
+            value="sea"
+          />
+          <label class="form-check-label" for="sea">Sea</label><br /><br />
+        </div>
+      </div>
+      <div id="weight">
+        <label for="weightFilter">Weight (kg)</label>
+        <input class="form-control" type="number" id="weightFilter" min="80" />
+      </div>
+      <div>
+        <label for="heightFilter">Height (kg)</label>
+        <input class="form-control" type="number" id="heightFilter" min="120" />
+      </div>
+      <div class="dropdown">
+        <label for="colorFilter">Color</label>
+        <select class="form-select" id="colorFilter">
+          <option value=""></option>
+          <option value="brown">brown</option>
+          <option value="grey">grey</option>
+        </select>
+      </div>
+    </section>
+
+    <div id="animal-cards"></div>
+
+    <script src="zoo.js"></script>
+  </body>
+</html>
